@@ -8,10 +8,21 @@ const ProjectModal = ({ project, onClose }) => {
   useEffect(() => {
     // Prevent body scroll when modal is open
     document.body.style.overflow = 'hidden';
+    
+    // Handle ESC key to close modal
+    const handleEscKey = (e) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    
+    document.addEventListener('keydown', handleEscKey);
+    
     return () => {
       document.body.style.overflow = 'unset';
+      document.removeEventListener('keydown', handleEscKey);
     };
-  }, []);
+  }, [onClose]);
 
   const handleBackdropClick = (e) => {
     // Only close if clicking directly on the backdrop, not on modal content
@@ -156,11 +167,11 @@ const ProjectModal = ({ project, onClose }) => {
         }
 
         .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out;
+          animation: fadeIn 0.3s ease-out forwards;
         }
 
         .animate-slideUp {
-          animation: slideUp 0.4s ease-out;
+          animation: slideUp 0.4s ease-out forwards;
         }
       `}</style>
     </div>
