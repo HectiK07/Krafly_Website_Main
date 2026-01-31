@@ -185,21 +185,6 @@ const Contact = () => {
                   <div className="text-gray-600 text-sm">+91 91379 38034</div>
                 </div>
               </a>
-
-              <a
-                href="https://wa.me/919137938034"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-sky-50 transition-colors duration-300 border border-gray-200 group"
-              >
-                <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center group-hover:bg-sky-600 transition-colors duration-300">
-                  <MessageCircle className="text-sky-600 group-hover:text-white transition-colors duration-300" size={20} />
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">WhatsApp</div>
-                  <div className="text-gray-600 text-sm">+91 91379 38034</div>
-                </div>
-              </a>
             </div>
           </div>
 
