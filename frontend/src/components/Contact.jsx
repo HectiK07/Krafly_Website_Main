@@ -71,8 +71,8 @@ const Contact = () => {
       // Get your form ID from: https://formspree.io/forms
       const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xpqqrrge';
       
-      // If endpoint is not configured, show warning
-      if (FORMSPREE_ENDPOINT === 'https://formspree.io/f/xpqqrrge') {
+      // If endpoint is not set, show warning
+      if (!FORMSPREE_ENDPOINT || FORMSPREE_ENDPOINT.trim() === '') {
         toast({
           title: "Configuration Required",
           description: "Please configure your Formspree endpoint. Check the instructions in Contact.jsx",
