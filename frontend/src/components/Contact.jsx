@@ -172,7 +172,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://wa.me/918767313141"
+                href="https://wa.me/919137938034"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-sky-50 transition-colors duration-300 border border-gray-200 group"
@@ -182,12 +182,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">WhatsApp</div>
-                  <div className="text-gray-600 text-sm">+91 87673 13141</div>
+                  <div className="text-gray-600 text-sm">+91 91379 38034</div>
                 </div>
               </a>
 
               <a
-                href="https://wa.me/919321636513"
+                href="https://wa.me/919137938034"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-sky-50 transition-colors duration-300 border border-gray-200 group"
@@ -197,7 +197,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">WhatsApp</div>
-                  <div className="text-gray-600 text-sm">+91 93216 36513</div>
+                  <div className="text-gray-600 text-sm">+91 91379 38034</div>
                 </div>
               </a>
             </div>
