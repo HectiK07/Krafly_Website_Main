@@ -14,7 +14,8 @@ const ProjectModal = ({ project, onClose }) => {
   }, []);
 
   const handleBackdropClick = (e) => {
-    if (modalRef.current && !modalRef.current.contains(e.target)) {
+    // Only close if clicking directly on the backdrop, not on modal content
+    if (e.target === e.currentTarget) {
       onClose();
     }
   };
